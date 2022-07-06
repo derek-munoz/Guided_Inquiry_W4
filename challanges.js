@@ -9,16 +9,21 @@ function min(p1, p2) {
 // Create an array of students holding their last name, first name, and age with 3 students. To validate, please log a greeting with the first name, last name and age of the 2nd student. The output should look like "Hello, my name is John Doe and I'm 19 years old."
 //unfinished
 
-const students = [];
+const students = ["Derek", "John","Jill"];
+lastname = {"Derek" : "Munoz", "John" : "Smith", "Jill":"Grace"};
+age = {"Derek" : 21, "John" : 45 , "Jill" : 34};
+
+console.log(`Hello, my name is ${students[1]} ${lastname["Jill"]} and I'm ${age["Jill"]} years old`);
 
 //Medium challenge
 //Create a program that accepts a number (1-12) as input and logs to the console that number and its corresponding month. For example: if the user enters the number 3, then it should return the month “March.” Alert the user if they enter an invalid number (e.g. less than 1 or greater than 12).
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var date = prompt("Enter a number between 1 and 12");
+parseInt(date);
 
-if (date > 1 && date < 13) {
-    console.log(`${date}: ${months[date + 1]}`);
+if (date > 0 && date < 13) {
+    console.log(`${date}: ${months[date - "1"]}`);
 }
 else{
     console.log("Enter a number between 1 and 12");
